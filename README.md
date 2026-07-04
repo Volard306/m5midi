@@ -45,3 +45,34 @@ Presets
 
 MIDI IN LED feedback
 
+--------------------------------------------------
+
+Required Libraries:
+
+Philhower RP2040 Core
+
+TinyUSB (included)
+
+Wire
+
+SSD1306 OLED library
+
+M5Stack 8Encoder library (or our own driver if it proves cleaner)
+
+Coding Standards
+
+I'd like to follow a few rules consistently:
+
+CamelCase for classes
+
+snake_case for variables
+
+constexpr instead of #define
+
+No dynamic allocation (new/malloc) after startup
+
+Fixed-size arrays wherever practical
+
+Strong typing with enum class
+
+Clear separation between hardware access and application logic
